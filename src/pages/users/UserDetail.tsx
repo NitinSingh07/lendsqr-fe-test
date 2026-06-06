@@ -6,10 +6,10 @@ import UserDetailsMain from '../../components/users/UserDetailsMain';
 import '../../styles/user-details.scss';
 import Loader from '../../components/general/Loader';
 
-interface Props {}
+interface Props { }
 
 const UserDetail: FC<Props> = () => {
-	const [loading, setLoading] = useState<Boolean>(true);
+	const [loading, setLoading] = useState<boolean>(true);
 	const [user, setUser] = useState([]);
 	const { id } = useParams();
 

@@ -6,9 +6,7 @@ interface Props {}
 const FilterForm: FC<Props> = () => {
 	const {
 		register,
-		reset,
 		handleSubmit,
-		formState: { errors },
 	} = useForm({
 		mode: 'all',
 	});

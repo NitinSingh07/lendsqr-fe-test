@@ -7,7 +7,7 @@ import ReactPaginate from 'react-paginate';
 import Loader from '../../components/general/Loader';
 
 const Users = () => {
-	const [loading, setLoading] = useState<Boolean>(true);
+	const [loading, setLoading] = useState<boolean>(true);
 	const [users, setUsers] = useState([]);
 	const [currentItems, setCurrentItems] = useState([]);
 	const [pageCount, setPageCount] = useState(0);
@@ -37,6 +37,7 @@ const Users = () => {
 
 	useEffect(() => {
 		fetchUsers();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	useEffect(() => {

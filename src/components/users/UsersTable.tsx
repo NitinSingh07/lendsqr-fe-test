@@ -8,14 +8,14 @@ import MoreDropDown from './MoreDropDown';
 
 interface Props {
 	users: UserModel[];
-	loading: Boolean;
+	loading: boolean;
 }
 
 const tableHeaders = ['Organization', 'Username', 'Email', 'Phone number', 'Date joined', 'Status', ''];
 
-const UsersTable: FC<Props> = ({ users, loading }) => {
-	const [isFilterOpen, setIsFilterOpen] = useState<null | Number>(null);
-	const [isOptionsOpen, setIsOptionsOpen] = useState<null | Number>(null);
+const UsersTable: FC<Props> = ({ users }) => {
+	const [isFilterOpen, setIsFilterOpen] = useState<null | number>(null);
+	const [isOptionsOpen, setIsOptionsOpen] = useState<null | number>(null);
 
 	return (
 		<div data-testid="user-table" className="users-table">

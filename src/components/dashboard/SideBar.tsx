@@ -8,11 +8,11 @@ interface Props {
 	isMenuOpen: boolean;
 }
 
-const SideBar: FC<Props> = ({ setIsMenuOpen, isMenuOpen }) => {
-	const pathname: String = useLocation().pathname;
+const SideBar: FC<Props> = ({ isMenuOpen }) => {
+	const pathname: string = useLocation().pathname;
 	const navigate = useNavigate();
 
-	const isRouteActive = (route: String) => {
+	const isRouteActive = (route: string) => {
 		if (pathname === '/dashboard' && route === '/dashboard') {
 			return true;
 		}

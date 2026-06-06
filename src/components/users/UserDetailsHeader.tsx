@@ -1,7 +1,7 @@
-import React, { FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const userNavItems: String[] = ['General Details', 'Documents', 'Bank Details', 'Loans', 'Savings', 'App and System'];
+const userNavItems: string[] = ['General Details', 'Documents', 'Bank Details', 'Loans', 'Savings', 'App and System'];
 
 interface Props {
     user: any;
